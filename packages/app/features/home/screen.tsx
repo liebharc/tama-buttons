@@ -1,6 +1,5 @@
 import {
   Anchor,
-  Button,
   H1,
   Paragraph,
   Separator,
@@ -12,6 +11,7 @@ import {
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'
+import Button from './Button'
 
 import { Activity, Airplay } from '@tamagui/lucide-icons'
 import { XGroup } from 'tamagui'
@@ -21,7 +21,7 @@ const repeatFactor = 50;
 export function ButtonDemo(props) {
   return (
     <YStack padding="$3" space="$15" {...props}>
-      <Button backgroundColor="red">{"Plain ".repeat(repeatFactor)}</Button>
+      <Button backgroundColor="red" size="$5">{"Plain ".repeat(repeatFactor)}</Button>
       <Button backgroundColor="red" alignSelf="center" icon={Airplay} size="$6">
         {"Large ".repeat(repeatFactor)}
       </Button>
